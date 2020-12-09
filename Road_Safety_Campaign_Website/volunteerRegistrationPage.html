@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+        	body{
+        		background-color: #ADD8E6;
+        	}
+        	.container{
+        		min-height: 100vh;
+        		display: flex;
+        		flex-direction: column;
+        		align-items: center;
+        	}
+        	.formDiv{
+        		background-color: #D8BFD8;
+        		border-left-style: solid;
+                border-width: 10px;
+                border-color: #800080;
+                border-radius: 20px;
+                padding: 20px;
+                font-size: 20px;
+                font-family: Palatino;
+        	}
+        	.btns{
+        		display: flex;
+        		justify-content: space-around;
+                font-family: Palatino;
+        	}
+        	button{
+        		border-radius: 15px;
+        		padding: 25px;
+        		opacity: 0.8;
+        	}
+        	#submit{
+        		background-color: #4682B4;
+        	}
+        	#reset{
+        		background-color: #FF6347;
+        	}
+        	#color{
+        		background-color: #FFFAFA;
+        	}
+            label{
+                color: #C71585;
+            }
+        	button:hover{
+        		opacity: 1.0;
+        	}
+        	a{
+        		text-decoration: none;
+        		color: #C71585;
+        	}
+        	a:hover{
+        		color: #FF69B4;
+        	}
+        </style>
+        <script type="text/javascript">
+        	const colors = ["ADD8E6", "98FB98"];
+        	i = [0];
+        	function changeBg(){
+        		if(i[0]==0){
+        			i[0] = 1;
+        		}
+        		else{
+        			i[0] = 0;
+        		}
+        		document.body.style.backgroundColor = "#" + colors[i[0]];
+        	}
+        	function showAlert(){
+        		alert("Submission Successful");
+        	}
+        </script>
+    </head>
+    <body>
+        <div class="container">
+        	<h1>Register Yourself as a Volunteer</h1>
+	        <br/><br/>
+	        <div class="formDiv">
+	        	<form name="volReg">
+		        	<label for="volName">Give your name, mortal:</label>
+		        	<input type="text" id="volName" name="volName">
+		        	<br/>
+		        	<label for="gender">Gender:</label>
+                    <input type="radio" name="gender">male
+		        	<input type="radio" name="gender">female
+		        	<input type="radio" name="gender" checked="checked">other
+		        	<br/>
+                    <label for="roadCrossType">Which of the following events can you attend:</label>
+		        	<br/>
+		        	&nbsp &nbsp &nbsp &nbsp
+		        	<input type="checkbox" name="roadCrossType">International Best Practices on Road Saftey.<br/>
+		        	&nbsp &nbsp &nbsp &nbsp
+		        	<input type="checkbox" name="roadCrossType">Seminar on safe driving.<br/>
+		        	&nbsp &nbsp &nbsp &nbsp
+		        	<input type="checkbox" name="roadCrossType">Traffic safety awareness poster design competition.<br/>
+		        	&nbsp &nbsp &nbsp &nbsp
+		        	<input type="checkbox" name="roadCrossType">First responder awareness workshop.<br/>
+		        	<br/>
+                    <label for="dropdown">Which Vehicle Do You Drive:</label>
+		        	<select name="dropdown">
+		        		<option>car</option>
+		        		<option>bike</option>
+		        		<option>truck</option>
+		        		<option>bus</option>
+		        	</select>
+		        	<br/><br/>
+                    <label for="dob">DOB:</label>
+		        	<input type="date" name="dob"><br/><br/>
+                    <label for="email">Email:</label>
+		        	<input type="email" name="email">&nbsp &nbsp
+                    <label for="contact">Contact no. :</label>
+		        	<input type="text" name="contact" maxlength="10"><br/>
+		        	<a href="mailto:RoadSafetyCampaign@gmail.com?subject=Participation as a volunteer">
+		        		Send a mail to us (optional)
+		        	</a><br/><br/>
+                    <label for="comment">let us know your thoughts on our campaign:</label>
+		        	<br/>&nbsp &nbsp &nbsp &nbsp
+		        	<textarea name="comment" maxlength="100" cols="50"></textarea>
+		        	<br/><br/>
+		        	<div class="btns">
+		        		<button type="submit" id="submit" onclick="showAlert()"><font size=3><b>submit</b></font></button>
+		        		<button type="reset" id="reset"><font size=3><b>reset</b></font></button><br/><br/>
+		        		<button type="button" id="color" value="ColourClick" name="ColourClick" onclick="changeBg()">
+		        			<font size=3><b>click to change color</b></font>
+		        		</button>
+		        	</div>
+		        </form>
+	        </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+body
+{
+	background-color: #fff;
+	min-height: 100vh; /**/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#colorbtn
+{
+	background-color: black;
+	color: white;
+	border-width: 5px;
+	border-color: black solid;
+	border-radius: 8px; /*makes the border rounded*/
+	padding: 10px 20px 10px 20px; /*padding: top right bottom left*/
+	text-transform: capitalize;
+	font-size: 28px;
+	opacity: 0.5;
+	cursor: pointer; /*curson becomes pointer finger when over the button*/
+}
+#colorbtn:hover
+{
+	background-color: black;
+	opacity: 1.0; /*the button darkens when you hover the  mouse over it*/
+}

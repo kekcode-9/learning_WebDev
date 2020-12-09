@@ -1,0 +1,23 @@
+body
+{
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: #ADD8E6;
+	background-image: url("kimi_no_na_wa.png");
+	background-size: cover;
+}
+.container
+{
+	border: 10px;
+	border-radius: 10px;
+	padding: 10px 20px 10px 20px;
+	border-style: solid;
+	border-color: #FF69B4;
+	background-color: black;
+	font-size: 50px;
+	font-family: sans-serif;
+	color: #17D4FE;
+	opacity: 0.5;
+}

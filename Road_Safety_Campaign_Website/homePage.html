@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background-color: #FFF8DC;
+                margin-left: 10vw;
+                margin-right: 5vw;
+            }
+            h1 {
+                text-align: center;
+                color: #FFFFF0;
+                font-family: Times;
+                background-color: #FF69B4;
+            }
+            h2 {
+                text-align: center;
+                color: #FFA500;
+                font-family: Times;
+            }
+            h3{
+                text-align: center;
+            }
+            .goals {
+                min-height: 20vh;
+                display: flex;
+                flex-direction: column;
+                text-align: stretch;
+                background-color: #F0FFF0;
+                font-size: 30px;
+                font-family: "Times New Roman";
+                color: #CD5C5C;
+                border-radius: 20px;
+            }
+            div.zebraWrapper {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to Road Safety Campaign</h1>
+        <h2>Our Goals</h2>
+        <div class="goals">
+            <ul>
+                <li>To promote awareness about road safety among people</li>
+                <li>To educate people about road safety rules and regulations</li>
+                <li>To provide trainings and workshops on topics including but not limited to:<br>
+                    <ul style="list-style-type: disc;">
+                        <li>Defensive Driving</li>
+                        <li>Crash Investigation</li>
+                        <li>Duties as a First Responder to an accident</li>
+                        <li>Road Safety Best practices</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <br/>
+        <marquee><a href="campaignSchedule.html">Visit our campaign schedule page!</a></marquee>
+        <br/>
+        <h2>Want to find out more about road safety?</h2>
+        <h3>Try clicking in different places in the following image</h3>
+        <font size="3">Hint: Click on the traffic lights</font>
+        <div class="zebraWrapper"><br>
+            <img src="traffic2.jpg" alt="Zebra Crossing" usemap="#roadmap" >
+            <map name="roadmap">
+                <area shape="rect" coords="386,589,386,590" href="moreInfo.html#zebra">
+                <area shape="rect" coords="386,590,432,677" href="moreInfo.html#zebra">
+                <area shape="rect" coords="709,41,1032,273" href="moreInfo.html#zebra">
+                <area shape="rect" coords="264,529,345,696" href="moreInfo.html#zebra">
+                <area shape="rect" coords="336,283,513,464" href="moreInfo.html#zebra">
+                <area shape="rect" coords="505,620,755,696" href="moreInfo.html#zebra">
+            </map>
+        </div>
+    </body>
+</html>

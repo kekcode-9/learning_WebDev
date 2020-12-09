@@ -1,0 +1,48 @@
+body
+{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #778899;
+}
+.images
+{
+	background-color: #f0f8ff;
+	min-height: 90vh;
+	flex: 0 0 40%;
+	background: url('images/img0.jpg')center/cover no-repeat;
+	border-radius: 15px;
+	box-shadow: 8px 10px #f08080; /*vertical shadow: 8px, horizontal shadow: 10px*/
+	position: relative;
+}
+.btn
+{
+	display: inline-block;
+	background-color: #ffffe0;
+	color: #db7093;
+	padding: 0.5rem;
+}
+.prevBtn
+{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(-50%,-50%); /*translating 50% to the left and 50% to the top*/ 
+}
+.nextBtn
+{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(50%,-50%); /*translating 50% to the left and 50% to the top*/ 
+}
+.btn:active
+{
+	background-color: #d8bfd8;
+	box-shadow: 3px 3px #ffffe0;
+}
+.btn:hover
+{
+	background-color: #008080;
+}

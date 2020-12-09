@@ -1,0 +1,38 @@
+body
+{
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-image: url("paintings/city_rain.gif");
+	background-size: cover;
+}
+.container
+{
+	text-align: center;
+	background-color: #008080;
+	border-width: 5px;
+	border-radius: 80px;
+}
+.btn
+{
+	background-color: black;
+	color: #87CEEB;
+	font-size: 30px;
+	border-width: 5px;
+	border-color: #48D1CC;
+	border-radius: 80px;
+	padding: 10px 20px 10px 20px;
+	opacity: 0.6;
+}
+.btn:hover
+{
+	opacity: 1.0;
+	background-color: black;
+}
+#slideshowbtn
+{}
+#stopbtn
+{
+	display: none;
+}

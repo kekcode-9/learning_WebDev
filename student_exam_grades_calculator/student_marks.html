@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<style>
+			body{
+				display: flex;
+				min-height: 100vh;
+				align-items: center;
+				justify-content: center;
+				background-color: #D3D3D3;
+			}
+			.container{
+				background-color: #FFB6C1;
+				text-align: center;
+				justify-content: center;
+			}
+			.btn{
+				background-color: black;
+				color: #FF1493;
+				font-size: 20px;
+				border-width: 5px;
+				border-color: #FF1493;
+				border-radius: 30px;
+				padding: 10px 20px 10px 20px;
+				opacity: 0.6;
+			}
+			.btn:hover{
+				opacity: 1.0;
+				background-color: black;
+			}
+		</style>
+		<script type="text/javascript">
+			function calculate(f){
+				marks = f.elements['marks'];
+				total = 0;
+				for(i=0; i<marks.length; i++){
+					total = total + parseInt(marks[i].value);
+				}
+				f.total.value = total;
+				percentage = total / 6;
+				f.percentage.value = percentage;
+				g = "";
+				if(percentage>=85){
+					g = "S";
+				}
+				else if(percentage>=70 && percentage<85){
+					g = "A";
+				}
+				else if(percentage>=60 && percentage<70){
+					g = "B";
+				}
+				else if(percentage>=50 && percentage<60){
+					g = "C";
+				}
+				else if(percentage>=40 && percentage<50){
+					g = "D";
+				}
+				else{
+					g = "F";
+				}
+				f.grade.value = g;
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<fieldset>
+				<form name="marksheet">
+					Student name: <input type="text" id="name">
+					<br/><br/>
+					Paper 1: <input type="number" name="marks">
+					<br/><br/>
+					Paper 2: <input type="number" name="marks">
+					<br/><br/>
+					Paper 3: <input type="number" name="marks">
+					<br/><br/>
+					Paper 4: <input type="number" name="marks">
+					<br/><br/>
+					Paper 5: <input type="number" name="marks">
+					<br/><br/>
+					Paper 6: <input type="number" name="marks">
+					<br/><br/>
+					<button type="button" id="btnCalc" class = "btn" onClick="calculate(this.form)">
+						calculate
+					</button>
+					<button type="reset" id="btnReset" class = "btn" onClick="">
+						reset
+					</button>
+					<br/><br/>
+					Total: <input type="text" name="total">
+					<br/><br/>
+					Percentage: <input type="text" name="percentage">
+					<br/><br/>
+					Grade: <input type="text" name="grade">
+			</form>
+			</fieldset>
+		</div>
+		
+	</body>
+</html>

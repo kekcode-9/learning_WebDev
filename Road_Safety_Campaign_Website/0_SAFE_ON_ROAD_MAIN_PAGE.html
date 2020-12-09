@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+        	#nav{
+        		height: 100vh;
+                background-color: #F5FFFA;
+                min-width: 20vw;
+                position: relative;
+        		display: flex;
+        		align-items: baseline;
+                justify-content: space-around;
+        		flex-direction: column;
+                float: left;
+                font-size: 1.5vw;
+                font-family: Times;
+        	}
+            iframe {
+                position: absolute;
+                right: 0;
+                display: block;
+                border: none;
+                width: 80vw;
+                height: 100vh;
+            }
+            .pageLink{
+                background-color: #D3D3D3;
+                opacity: 0.6;
+                border-radius: 25px;
+                padding: 10px 10px 10px 10px;
+            }
+            .pageLink:hover{
+                transform: scale(1.06);
+                opacity: 1.0;
+            }
+            a:link{
+                text-decoration: none;
+                color: black;
+            }
+            a:hover{
+                color: #F08080;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="nav">
+            <span class="pageLink">
+                <a href="homePage.html" target="content">Home</a>
+            </span>
+            <span class="pageLink">
+                <a href="volunteerRegistrationPage.html" target="content">Volunteer Registration</a>
+            </span>
+            <span class="pageLink">
+                <a href="roadSafetyRules.html" target="content">Road safety Rules</a>
+            </span>
+            <span class="pageLink">
+                <a href="campaignSchedule.html" target="content">Campaign Schedule</a>
+            </span>
+            <span class="pageLink">
+                <a href="moreInfo.html" target="content">More info</a>
+            </span>
+        </div>
+        <iframe name="content" src="homePage.html"></iframe>
+    </body>
