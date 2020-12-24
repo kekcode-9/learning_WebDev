@@ -1,0 +1,44 @@
+body
+{
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+	background-color: #E6E6FA;
+	background-size: cover;
+}
+.container
+{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	text-align: center;
+	background-color: #ADD8E6;
+	border-width: 5px;
+	border-radius: 80px;
+}
+.btn
+{
+	background-color: black;
+	width: 200px;
+	height: 100px;
+	color: #87CEEB;
+	font-size: 30px;
+	border-width: 5px;
+	border-color: #48D1CC;
+	border-radius: 80px;
+	padding: 10px 20px 10px 20px;
+	opacity: 0.6;
+}
+.btn:hover
+{
+	opacity: 1.0;
+	background-color: black;
+}
+#slideshowbtn
+{}
+#stopbtn
+{
+	display: none;
+}
